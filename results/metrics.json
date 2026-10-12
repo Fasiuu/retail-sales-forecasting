@@ -1,0 +1,54 @@
+{
+  "sarima_order": [
+    [
+      2,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      12
+    ]
+  ],
+  "backtest_summary": [
+    {
+      "model": "Ensemble (HW + SARIMA)",
+      "MAPE": 1.187,
+      "RMSE": 6.2394,
+      "MASE": 0.3239
+    },
+    {
+      "model": "SARIMA",
+      "MAPE": 1.2141,
+      "RMSE": 6.329,
+      "MASE": 0.3313
+    },
+    {
+      "model": "Holt-Winters",
+      "MAPE": 1.4101,
+      "RMSE": 7.3999,
+      "MASE": 0.3861
+    },
+    {
+      "model": "LightGBM (growth)",
+      "MAPE": 1.6724,
+      "RMSE": 9.0674,
+      "MASE": 0.4512
+    },
+    {
+      "model": "Seasonal naive",
+      "MAPE": 3.2942,
+      "RMSE": 15.4748,
+      "MASE": 0.9073
+    }
+  ],
+  "best_model": "Ensemble (HW + SARIMA)",
+  "best_mape": 1.187,
+  "naive_mape": 3.294,
+  "error_reduction_vs_naive_pct": 64.0,
+  "interval_coverage_80": 1.0,
+  "trend_strength": 0.997,
+  "seasonal_strength": 0.945
+}
